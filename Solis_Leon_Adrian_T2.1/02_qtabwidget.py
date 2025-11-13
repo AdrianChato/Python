@@ -1,12 +1,13 @@
-# Adrián Solís León 2ºDAM
+#Adrián Solís León 2ºDAM
+
 from PySide6.QtWidgets import QApplication, QMainWindow, QTabWidget, QLabel, QWidget, QVBoxLayout
 
 class VentanaPrincipal(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Pestaña 1")
+        self.setWindowTitle("Página 1")
 
-        self.tabs = QTabWidget()
+        tabs = QTabWidget()
 
         tab1 = QWidget()
         tab1_layout = QVBoxLayout()
@@ -15,25 +16,25 @@ class VentanaPrincipal(QMainWindow):
 
         tab2 = QWidget()
         tab2_layout = QVBoxLayout()
-        tab2_layout.addWidget(QLabel("Segunda pestaña"))
+        tab2_layout.addWidget(QLabel("Segunda página"))
         tab2.setLayout(tab2_layout)
 
         tab3 = QWidget()
         tab3_layout = QVBoxLayout()
-        tab3_layout.addWidget(QLabel("Tercera pestaña"))
+        tab3_layout.addWidget(QLabel("Tercera página"))
         tab3.setLayout(tab3_layout)
 
-        self.tabs.addTab(tab1, "Inicio")
-        self.tabs.addTab(tab2, "Página 2")
-        self.tabs.addTab(tab3, "Página 3")
+        tabs.addTab(tab1, "Inicio")
+        tabs.addTab(tab2, "Página 2")
+        tabs.addTab(tab3, "Página 3")
 
-        self.tabs.currentChanged.connect(self.cambiar_pestania)
+        tabs.currentChanged.connect(self.cambiar_pagina)
 
-        self.setCentralWidget(self.tabs)
+        self.setCentralWidget(tabs)
 
-    def cambiar_pestania(self, indice):
-        self.setWindowTitle(f"Pestaña {indice + 1}")
-        print(f"Pestaña actual: {indice}")
+    def cambiar_pagina(self, indice):
+        self.setWindowTitle(f"Página {indice + 1}")
+        print(f"Página actual: {indice}")
 
 app = QApplication([])
 window = VentanaPrincipal()

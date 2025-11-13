@@ -1,4 +1,5 @@
-# Adrián Solís León 2ºDAM
+#Adrián Solís León 2ºDAM
+
 from PySide6.QtCore import QTimer
 from PySide6.QtWidgets import QApplication, QMainWindow, QProgressBar
 
