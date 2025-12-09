@@ -34,8 +34,7 @@ class VentanaPrincipal(QWidget):
 
         self.setLayout(layout)
 
-
-
+ 
 
 app = QApplication(sys.argv)
 with open("Solis_Adrian_estilos_T3.1.qss", "r") as f:
