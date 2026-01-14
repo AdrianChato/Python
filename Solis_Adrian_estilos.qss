@@ -1,0 +1,35 @@
+QMainWindow {
+    background-color: #00d107ff;
+}
+
+QWidget {
+    font-family: "Segoe UI";
+    font-size: 12pt;
+}
+
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QPushButton:pressed {
+    background-color: #1c6690;
+}
+
+QPushButton:disabled {
+    background-color: #95a5a6;
+    color: #eee;
+}
+
+QLabel {
+    color: #333;
+    font: 12pt;
+    padding: 8px 16px;
+}
