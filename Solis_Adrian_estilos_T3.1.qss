@@ -1,0 +1,94 @@
+QCheckBox {
+    font: 12pt "Segoe UI";
+    color: #333;
+}
+QCheckBox::indicator {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #555;
+    background: #eee;
+}
+QCheckBox::indicator:checked {
+    background-color: #a5af4cff;
+    border: 2px solid #8caf4cff;
+}
+QCheckBox::indicator:hover {
+    background-color: #a5d6a7;
+}
+QCheckBox::indicator:disabled {
+    background-color: #ccc;
+    border: 2px solid #aaa;
+}
+
+QPushButton {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font: bold 12pt "Segoe UI";
+}
+QPushButton:hover {
+    background-color: #1976D2;
+}
+QPushButton:pressed {
+    background-color: #0D47A1;
+}
+QPushButton:disabled {
+    background-color: #90CAF9;
+    color: #eee;
+}
+
+QLineEdit {
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+    background-color: #fafafa;
+    font: 11pt "Segoe UI";
+}
+QLineEdit:focus {
+    border: 2px solid #2196F3;
+    background-color: #ffffff;
+}
+
+QRadioButton {
+    font: 12pt "Segoe UI";
+    color: #333;
+}
+QRadioButton::indicator {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 2px solid #555;
+    background: #eee;
+}
+QRadioButton::indicator:checked {
+    background-color: #ff22edff;
+    border: 2px solid #ff22edff;
+}
+QRadioButton::indicator:hover {
+    background-color: #FFAB91;
+}
+
+QComboBox {
+    background-color: #ffffff;
+    border: 2px solid #2196F3;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font: 11pt "Segoe UI";
+}
+QComboBox:hover {
+    background-color: #E3F2FD;
+}
+QComboBox::drop-down {
+    border-left: 1px solid #2196F3;
+    width: 20px;
+}
+QComboBox::down-arrow {
+    image: url(down_arrow.png); /* opcional, puedes usar un icono */
+}
+QComboBox QAbstractItemView {
+    background-color: #fafafa;
+    selection-background-color: #2196F3;
+    selection-color: white;
+}
